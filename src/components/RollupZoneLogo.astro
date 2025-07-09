@@ -3,16 +3,18 @@
 
 <svg width="250" height="60" viewBox="0 0 250 60" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
 
     .glitch-text {
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Rajdhani', sans-serif;
       font-size: 40px;
       font-weight: 700;
       fill: #00FF00; /* Bright Green */
       text-anchor: middle;
       dominant-baseline: central;
       text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+      transform: scale(0.82); /* Scaled down by 18% */
+      transform-origin: center center;
     }
 
     .glitch-effect {
@@ -41,30 +43,30 @@
     }
 
     @keyframes glitch-anim {
-      0% { transform: translate(0); }
-      20% { transform: translate(-2px, 2px); }
-      40% { transform: translate(-2px, -2px); }
-      60% { transform: translate(2px, 2px); }
-      80% { transform: translate(2px, -2px); }
-      100% { transform: translate(0); }
+      0% { transform: translate(0) scale(0.82); }
+      20% { transform: translate(-2px, 2px) scale(0.82); }
+      40% { transform: translate(-2px, -2px) scale(0.82); }
+      60% { transform: translate(2px, 2px) scale(0.82); }
+      80% { transform: translate(2px, -2px) scale(0.82); }
+      100% { transform: translate(0) scale(0.82); }
     }
 
     @keyframes glitch-anim-1 {
-      0% { transform: translate(-2px, -2px); }
-      20% { transform: translate(2px, 0); }
-      40% { transform: translate(-2px, 2px); }
-      60% { transform: translate(2px, -2px); }
-      80% { transform: translate(-2px, 0); }
-      100% { transform: translate(0); }
+      0% { transform: translate(-2px, -2px) scale(0.82); }
+      20% { transform: translate(2px, 0) scale(0.82); }
+      40% { transform: translate(-2px, 2px) scale(0.82); }
+      60% { transform: translate(2px, -2px) scale(0.82); }
+      80% { transform: translate(-2px, 0) scale(0.82); }
+      100% { transform: translate(0) scale(0.82); }
     }
 
     @keyframes glitch-anim-2 {
-      0% { transform: translate(2px, 2px); }
-      20% { transform: translate(-2px, 0); }
-      40% { transform: translate(2px, -2px); }
-      60% { transform: translate(-2px, 2px); }
-      80% { transform: translate(2px, 0); }
-      100% { transform: translate(0); }
+      0% { transform: translate(2px, 2px) scale(0.82); }
+      20% { transform: translate(-2px, 0) scale(0.82); }
+      40% { transform: translate(2px, -2px) scale(0.82); }
+      60% { transform: translate(-2px, 2px) scale(0.82); }
+      80% { transform: translate(2px, 0) scale(0.82); }
+      100% { transform: translate(0) scale(0.82); }
     }
   </style>
   <text x="125" y="35" class="glitch-text glitch-effect">RollupZone</text>
