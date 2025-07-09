@@ -2,10 +2,7 @@
 ---
 
 <div class="phoenix-animation-container">
-  <svg class="phoenix-svg" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-
-    <path d="M12 1C5.925 1 1 5.925 1 12C1 18.075 5.925 23 12 23C18.075 23 23 18.075 23 12C23 5.925 18.075 1 12 1ZM12 3C16.971 3 21 7.029 21 12C21 16.971 16.971 21 12 21C7.029 21 3 16.971 3 12C3 7.029 7.029 3 12 3ZM12 5C9.239 5 7 7.239 7 10C7 12.761 9.239 15 12 15C14.761 15 17 12.761 17 10C17 7.239 14.761 5 12 5ZM12 7C13.657 7 15 8.343 15 10C15 11.657 13.657 13 12 13C10.343 13 9 11.657 9 10C9 8.343 10.343 7 12 7ZM12 17C7.582 17 4 20.582 4 22H20C20 20.582 16.418 17 12 17Z"/>
-  </svg>
+  <img src="https://gifdb.com/images/high/phoenix-pixel-art-19x0p0sly95iicb4.gif" alt="Phoenix Animation" class="phoenix-gif" />
 </div>
 
 <style is:global>
@@ -18,33 +15,9 @@
     align-items: center;
     overflow: hidden;
   }
-  .phoenix-svg {
-    width: 200px;
-    height: 200px;
-    color: #ff4500; /* OrangeRed for phoenix */
-    animation: phoenix-rise 4s ease-in-out infinite alternate, color-change 8s linear infinite;
-  }
-
-  @keyframes phoenix-rise {
-    0% {
-      transform: translateY(0) scale(1);
-      opacity: 0.7;
-    }
-    50% {
-      transform: translateY(-20px) scale(1.1);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(0) scale(1);
-      opacity: 0.7;
-    }
-  }
-
-  @keyframes color-change {
-    0% { color: #ff4500; }
-    25% { color: #00ffff; }
-    50% { color: #ff00ff; }
-    75% { color: #00ff00; }
-    100% { color: #ff4500; }
+  .phoenix-gif {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    object-fit: contain;
   }
 </style>
