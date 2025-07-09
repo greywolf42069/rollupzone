@@ -1,0 +1,50 @@
+---
+---
+
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .glitch-text {
+      font-family: 'Arial Black', Gadget, sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      fill: #00ff00; /* Neon Green */
+      text-anchor: middle;
+      dominant-baseline: central;
+      animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    .glitch-shadow {
+      fill: none;
+      stroke: #ff00ff; /* Neon Pink */
+      stroke-width: 1px;
+      filter: url(#glitch-filter);
+      animation: glitch-shadow 1s infinite;
+    }
+
+    @keyframes glitch-shadow {
+      0% { transform: translate(0); opacity: 0.5; }
+      20% { transform: translate(2px, -2px); opacity: 0.8; }
+      40% { transform: translate(-2px, 2px); opacity: 0.6; }
+      60% { transform: translate(2px, 2px); opacity: 0.9; }
+      80% { transform: translate(-2px, -2px); opacity: 0.7; }
+      100% { transform: translate(0); opacity: 0.5; }
+    }
+  </style>
+  <defs>
+    <filter id="glitch-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="1" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <text x="100" y="25" class="glitch-text">RollupZone</text>
+  <text x="100" y="25" class="glitch-shadow">RollupZone</text>
+</svg>
