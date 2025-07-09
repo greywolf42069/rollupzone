@@ -7,17 +7,19 @@
 
 <style is:global>
   .phoenix-animation-container {
-    width: 100%;
-    height: auto; /* Adjust as needed */
-    margin-top: 100px; /* Move down a bit */
+    width: 50%; /* Decrease container size */
+    height: auto;
+    margin-top: 50px; /* Adjust margin for better centering */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
   }
   .phoenix-gif {
-    width: 960px; /* Increased by 60% */
-    height: 960px; /* Increased by 60% */
+    width: 100%; /* Make GIF size relative to container */
+    height: 100%;
+    max-width: 960px; /* Keep original max size */
+    max-height: 960px;
     object-fit: contain;
   }
 </style>
