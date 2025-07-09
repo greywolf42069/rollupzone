@@ -1,7 +1,7 @@
 site:
   name: AstroWind
   site: 'https://astrowind.vercel.app'
-  base: '/'
+  base: '/rollupzone/' # For GitHub Pages deployment, set this to your repository name
   trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
