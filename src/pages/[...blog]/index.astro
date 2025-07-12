@@ -16,7 +16,9 @@ import RelatedPosts from '~/components/blog/RelatedPosts.astro';
 export const prerender = true;
 
 export const getStaticPaths = (async () => {
-  return await getStaticPathsBlogPost();
+  const paths = await getStaticPathsBlogPost();
+  // Filter out empty or root paths to avoid conflicts with index.astro
+  return paths.filter(path => path.params.blog && path.params.blog.trim() !== '' && path.params.blog !== '/');
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
