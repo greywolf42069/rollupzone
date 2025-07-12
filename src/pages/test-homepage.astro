@@ -1,0 +1,112 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import PhoenixAnimation from '~/components/PhoenixAnimation.astro';
+import Features from '~/components/widgets/Features.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Explore swrm.exchange',
+        href: 'https://swrm.exchange',
+        target: '_blank',
+        icon: 'tabler:external-link',
+      },
+      { text: 'Learn more', href: '#features' },
+    ]}
+  >
+
+    <Fragment slot="title">
+      Unleash the Future of Decentralization with <span class="text-accent dark:text-white">RollupZone</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">RollupZone</span> is built upon a custom blockchain fork of Waves.Tech, delivering a robust and scalable ecosystem.
+      </span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">RollupZone: Next-Gen Blockchain.</span>
+      Explore the full dApp-based ecosystem suite at swrm.exchange.
+    </Fragment>
+    <Fragment slot="image">
+      <PhoenixAnimation />
+    </Fragment>
+  </Hero>
+
+
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline="Why $SWRM Swarm?"
+    title="$SWRM Swarm: A Superior Financial Model in Blockchain"
+    subtitle="$SWRM Swarm offers a more robust and sustainable financial model compared to traditional blockchain platforms like Waves. Here's why."
+    items={[
+      {
+        title: 'Sustainable Tokenomics',
+        description:
+          '$SWRM Swarm implements a unique tokenomic structure designed for long-term sustainability and value appreciation, minimizing inflationary pressures.',
+        icon: 'tabler:currency-dollar',
+      },
+      {
+        title: 'Enhanced Liquidity Mechanisms',
+        description:
+          'Unlike Waves, $SWRM Swarm integrates advanced liquidity protocols that ensure deeper markets and more stable trading environments for its native assets.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Decentralized Governance',
+        description:
+          '$SWRM Swarm empowers its community with true decentralized governance, allowing token holders to directly influence the platform\'s future development and financial policies.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Innovative Staking Rewards',
+        description:
+          'The platform offers dynamic staking rewards that incentivize long-term participation and network security, providing a more attractive return profile than many existing chains.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Cross-Chain Interoperability',
+        description:
+          '$SWRM Swarm is built with cross-chain compatibility in mind, facilitating seamless asset transfer and communication with other major blockchain networks, expanding its financial ecosystem.',
+        icon: 'tabler:link',
+      },
+      {
+        title: 'Robust Security Framework',
+        description:
+          'Leveraging cutting-edge cryptographic techniques and a distributed network architecture, $SWRM Swarm provides a highly secure environment for all financial transactions and smart contracts.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+
+  <!-- Buy Now Widget **************** -->
+  <CallToAction
+    id="buy-now"
+    title="Ready to join $SWRM Swarm?"
+    subtitle="Get your $SWRM tokens now and be part of the next generation blockchain revolution."
+    actions={[
+      {
+        text: 'Buy $SWRM Now',
+        href: 'https://dexscreener.com/optimism/0xe38a5e0799ebb7a38ce4418c1c16443badea5b6e',
+        target: '_blank',
+        variant: 'primary',
+        icon: 'tabler:currency-dollar'
+      }
+    ]}
+  />
+
+</Layout>
