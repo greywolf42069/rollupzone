@@ -3,14 +3,12 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import PhoenixAnimation from '~/components/PhoenixAnimation.astro';
-import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
@@ -34,14 +32,14 @@ const metadata = {
       { text: 'Learn more', href: '#features' },
     ]}
   >
-
     <Fragment slot="title">
       Unleash the Future of Decentralization with <span class="text-accent dark:text-white">RollupZone</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">RollupZone</span> is built upon a custom blockchain fork of Waves.Tech, delivering a robust and scalable ecosystem.
+        <span class="font-semibold">RollupZone</span> is built upon a custom blockchain fork of Waves.Tech, delivering a
+        robust and scalable ecosystem.
       </span>
       <span class="block mb-1 sm:hidden font-bold text-blue-600">RollupZone: Next-Gen Blockchain.</span>
       Explore the full dApp-based ecosystem suite at swrm.exchange.
@@ -50,8 +48,6 @@ const metadata = {
       <PhoenixAnimation />
     </Fragment>
   </Hero>
-
-
 
   <!-- Features Widget *************** -->
 
@@ -76,7 +72,7 @@ const metadata = {
       {
         title: 'Decentralized Governance',
         description:
-          '$SWRM Swarm empowers its community with true decentralized governance, allowing token holders to directly influence the platform\'s future development and financial policies.',
+          "$SWRM Swarm empowers its community with true decentralized governance, allowing token holders to directly influence the platform's future development and financial policies.",
         icon: 'tabler:users',
       },
       {
@@ -111,8 +107,8 @@ const metadata = {
         href: 'https://dexscreener.com/optimism/0xe38a5e0799ebb7a38ce4418c1c16443badea5b6e',
         target: '_blank',
         variant: 'primary',
-        icon: 'tabler:currency-dollar'
-      }
+        icon: 'tabler:currency-dollar',
+      },
     ]}
   />
 
@@ -149,8 +145,6 @@ const metadata = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
       Gain a competitive advantage by incorporating industry leading practices
     </Fragment>
-
-
   </Content>
 
   <!-- Content Widget **************** -->
@@ -184,8 +178,6 @@ const metadata = {
     }}
   >
     <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
-
-
   </Content>
 
   <!-- Content Widget **************** -->
@@ -220,8 +212,6 @@ const metadata = {
     }}
   >
     <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-
   </Content>
 
   <!-- Steps Widget ****************** -->
@@ -316,10 +306,7 @@ const metadata = {
         icon: 'flat-color-icons:database',
       },
     ]}
-
-  >
-
-  </Features2>
+  />
 
   <!-- HighlightedPosts Widget ******* -->
 

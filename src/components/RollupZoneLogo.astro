@@ -1,4 +1,5 @@
 ---
+
 ---
 
 <svg width="250" height="60" viewBox="0 0 250 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -9,10 +10,12 @@
       font-family: 'Rajdhani', sans-serif;
       font-size: 40px;
       font-weight: 700;
-      fill: #00FF00; /* Bright Green */
+      fill: #00ff00; /* Bright Green */
       text-anchor: middle;
       dominant-baseline: central;
-      text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+      text-shadow:
+        0 0 5px #00ff00,
+        0 0 10px #00ff00;
       transform: scale(0.82); /* Scaled down by 18% */
       transform-origin: center center;
     }
@@ -31,42 +34,78 @@
     }
 
     .glitch-effect.clone:nth-child(1) {
-      fill: #FF00FF; /* Bright Magenta */
+      fill: #ff00ff; /* Bright Magenta */
       clip-path: inset(60% 0 0 0);
       animation: glitch-anim-1 2s infinite linear alternate-reverse;
     }
 
     .glitch-effect.clone:nth-child(2) {
-      fill: #00FFFF; /* Cyan */
+      fill: #00ffff; /* Cyan */
       clip-path: inset(0 0 60% 0);
       animation: glitch-anim-2 2s infinite linear alternate-reverse;
     }
 
     @keyframes glitch-anim {
-      0% { transform: translate(0) scale(0.82); }
-      20% { transform: translate(-2px, 2px) scale(0.82); }
-      40% { transform: translate(-2px, -2px) scale(0.82); }
-      60% { transform: translate(2px, 2px) scale(0.82); }
-      80% { transform: translate(2px, -2px) scale(0.82); }
-      100% { transform: translate(0) scale(0.82); }
+      0% {
+        transform: translate(0) scale(0.82);
+      }
+      20% {
+        transform: translate(-2px, 2px) scale(0.82);
+      }
+      40% {
+        transform: translate(-2px, -2px) scale(0.82);
+      }
+      60% {
+        transform: translate(2px, 2px) scale(0.82);
+      }
+      80% {
+        transform: translate(2px, -2px) scale(0.82);
+      }
+      100% {
+        transform: translate(0) scale(0.82);
+      }
     }
 
     @keyframes glitch-anim-1 {
-      0% { transform: translate(-2px, -2px) scale(0.82); }
-      20% { transform: translate(2px, 0) scale(0.82); }
-      40% { transform: translate(-2px, 2px) scale(0.82); }
-      60% { transform: translate(2px, -2px) scale(0.82); }
-      80% { transform: translate(-2px, 0) scale(0.82); }
-      100% { transform: translate(0) scale(0.82); }
+      0% {
+        transform: translate(-2px, -2px) scale(0.82);
+      }
+      20% {
+        transform: translate(2px, 0) scale(0.82);
+      }
+      40% {
+        transform: translate(-2px, 2px) scale(0.82);
+      }
+      60% {
+        transform: translate(2px, -2px) scale(0.82);
+      }
+      80% {
+        transform: translate(-2px, 0) scale(0.82);
+      }
+      100% {
+        transform: translate(0) scale(0.82);
+      }
     }
 
     @keyframes glitch-anim-2 {
-      0% { transform: translate(2px, 2px) scale(0.82); }
-      20% { transform: translate(-2px, 0) scale(0.82); }
-      40% { transform: translate(2px, -2px) scale(0.82); }
-      60% { transform: translate(-2px, 2px) scale(0.82); }
-      80% { transform: translate(2px, 0) scale(0.82); }
-      100% { transform: translate(0) scale(0.82); }
+      0% {
+        transform: translate(2px, 2px) scale(0.82);
+      }
+      20% {
+        transform: translate(-2px, 0) scale(0.82);
+      }
+      40% {
+        transform: translate(2px, -2px) scale(0.82);
+      }
+      60% {
+        transform: translate(-2px, 2px) scale(0.82);
+      }
+      80% {
+        transform: translate(2px, 0) scale(0.82);
+      }
+      100% {
+        transform: translate(0) scale(0.82);
+      }
     }
   </style>
   <text x="125" y="35" class="glitch-text glitch-effect">RollupZone</text>
